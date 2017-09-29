@@ -6,11 +6,16 @@
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/27 20:10:52 by dhill             #+#    #+#             */
-/*   Updated: 2017/07/01 17:10:09 by dhill            ###   ########.fr       */
+/*   Updated: 2017/09/25 18:17:49 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Tries to find the length of the number inputed
+** and returns it as an int; takes longs
+*/
 
 int		ft_intlen(long n)
 {

@@ -6,7 +6,7 @@
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/09 21:08:00 by dhill             #+#    #+#             */
-/*   Updated: 2017/07/18 20:21:16 by dhill            ###   ########.fr       */
+/*   Updated: 2017/09/28 19:15:42 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,6 @@ int					ft_iswhitespace(char c);
 int					ft_intlen(long n);
 int					ft_find(const char *str, const char *find);
 void				ft_lstpop(t_list **alst, void (*del)(void *, size_t));
-void				ft_tprint(void *toprint, char *type);
 
 t_list				*ft_lstnew(void const *content, size_t content_size);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
@@ -104,4 +103,5 @@ void				*ft_realloc(void *src, size_t srcsize, size_t newsize);
 void				ft_tprint(void *toprint, char *type);
 int					ft_ceil(double num);
 double				ft_sqrt(double num);
+char				*ft_strnjoin(char const *s1, char const *s2, size_t n);
 #endif

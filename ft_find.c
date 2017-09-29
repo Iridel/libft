@@ -6,11 +6,16 @@
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/05 22:20:19 by dhill             #+#    #+#             */
-/*   Updated: 2017/07/05 23:31:13 by dhill            ###   ########.fr       */
+/*   Updated: 2017/09/26 22:52:23 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** finds the first occurrence of the string find in in the string str.
+** it returns the index of the first char find
+*/
 
 int		ft_find(const char *str, const char *find)
 {
