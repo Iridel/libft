@@ -1,0 +1,11 @@
+When adding a new function, test it individually first with tests that:
+1). Use valid input.
+2). Use invalid input.
+3). Edge cases.
+4). Extremes of valid input.
+
+Also remember that these files need to be edited for the makefile to work:
+makefile
+libft.h
+
+List of functionalities: See google doc
