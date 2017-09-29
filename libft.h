@@ -6,7 +6,7 @@
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/09 21:08:00 by dhill             #+#    #+#             */
-/*   Updated: 2017/09/28 19:15:42 by dhill            ###   ########.fr       */
+/*   Updated: 2017/09/28 23:13:31 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,4 +104,5 @@ void				ft_tprint(void *toprint, char *type);
 int					ft_ceil(double num);
 double				ft_sqrt(double num);
 char				*ft_strnjoin(char const *s1, char const *s2, size_t n);
+char				*ft_strjoin_free(char const *s1, char *s2);
 #endif
