@@ -6,14 +6,14 @@
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/28 18:58:55 by dhill             #+#    #+#             */
-/*   Updated: 2017/09/28 19:17:45 by dhill            ###   ########.fr       */
+/*   Updated: 2017/09/28 22:20:13 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** strjoin but for n len of s2; when using in GNL, -1 to n to not copy newline
+** strjoin but for n len of s2;
 */
 
 char	*ft_strnjoin(char const *s1, char const *s2, size_t n)
@@ -27,7 +27,7 @@ char	*ft_strnjoin(char const *s1, char const *s2, size_t n)
 		return (NULL);
 	len = ft_strlen((char *)s1) + n;
 	newstr = ft_strnew(len);
-	if (newstr)
+	if (!newstr)
 		return (NULL);
 	i = 0;
 	i2 = 0;
