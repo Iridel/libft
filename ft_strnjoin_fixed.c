@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnjoin.c                                      :+:      :+:    :+:   */
+/*   ft_strnjoin_fixed.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/28 18:58:55 by dhill             #+#    #+#             */
-/*   Updated: 2017/10/01 00:59:26 by dhill            ###   ########.fr       */
+/*   Updated: 2017/10/01 01:22:59 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** strjoin but for fixed sizes;
 */
 
-char	*ft_strnjoin(char const *s1, char const *s2, size_t x, size_t y)
+char	*ft_strnjoin_fixed(char const *s1, char const *s2, size_t x, size_t y)
 {
 	char	*newstr;
 	size_t	i;
