@@ -6,11 +6,7 @@
 #    By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/18 01:50:34 by dhill             #+#    #+#              #
-<<<<<<< HEAD
-#    Updated: 2017/09/30 22:28:12 by dhill            ###   ########.fr        #
-=======
-#    Updated: 2017/09/28 23:10:46 by dhill            ###   ########.fr        #
->>>>>>> 37e6ff23d9ee8189b68328359abafa04babe7b5a
+#    Updated: 2017/09/30 22:35:03 by dhill            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,13 +23,9 @@ SRCS = 	ft_atoi.c ft_memalloc.c ft_putendl_fd.c ft_strdup.c ft_strncpy.c \
 		ft_iswhitespace.c ft_putchar_fd.c ft_strcpy.c ft_strncat.c \
 		ft_tolower.c ft_itoa.c ft_putendl.c ft_strdel.c ft_strncmp.c \
 		ft_toupper.c ft_lstpop.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c \
-<<<<<<< HEAD
 		ft_lstadd.c ft_lstiter.c ft_lstmap.c ft_tprint.c ft_nfindi.c \
-		ft_ceil.c ft_sqrt.c ft_realloc.c ft_tprint.c ft_strnjoin.c
-=======
-		ft_lstadd.c ft_lstiter.c ft_lstmap.c ft_tprint.c ft_find.c ft_ceil.c \
-		ft_sqrt.c ft_realloc.c ft_tprint.c ft_strnjoin.c ft_strjoin_free.c
->>>>>>> 37e6ff23d9ee8189b68328359abafa04babe7b5a
+		ft_ceil.c ft_sqrt.c ft_realloc.c ft_tprint.c ft_strnjoin.c \
+		ft_strjoin_free.c
 OBJ = ${SRCS:.c=.o} 
 
 .PHONY: all clean fclean re
