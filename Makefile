@@ -6,7 +6,7 @@
 #    By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/18 01:50:34 by dhill             #+#    #+#              #
-#    Updated: 2017/09/30 22:35:03 by dhill            ###   ########.fr        #
+#    Updated: 2017/10/01 01:06:35 by dhill            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ SRCS = 	ft_atoi.c ft_memalloc.c ft_putendl_fd.c ft_strdup.c ft_strncpy.c \
 		ft_toupper.c ft_lstpop.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c \
 		ft_lstadd.c ft_lstiter.c ft_lstmap.c ft_tprint.c ft_nfindi.c \
 		ft_ceil.c ft_sqrt.c ft_realloc.c ft_tprint.c ft_strnjoin.c \
-		ft_strjoin_free.c
+		ft_strjoin_free.c ft_strnjoin_fixed.c
 OBJ = ${SRCS:.c=.o} 
 
 .PHONY: all clean fclean re
@@ -36,7 +36,7 @@ $(NAME): $(OBJ)
 	ar rcs $(NAME) $^
 
 %.o: %.c
-	gcc -Wall -Wextra -Werror -c $<
+	gcc -g -Wall -Wextra -Werror -c $<
 
 clean: 
 	rm -f $(OBJ)
