@@ -6,7 +6,7 @@
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/14 18:25:28 by dhill             #+#    #+#             */
-/*   Updated: 2017/09/25 19:06:08 by dhill            ###   ########.fr       */
+/*   Updated: 2017/09/28 22:46:33 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 ** copies bytes from src to dest until n bytes are copied or c is found in src.
 ** if c is found, it will copy & return a pointer to the byte after (in dest).
 */
-
 
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {

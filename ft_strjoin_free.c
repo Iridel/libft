@@ -1,30 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin_free.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/08 01:09:10 by dhill             #+#    #+#             */
-/*   Updated: 2017/09/29 00:56:51 by dhill            ###   ########.fr       */
+/*   Created: 2017/09/28 22:58:57 by dhill             #+#    #+#             */
+/*   Updated: 2017/09/28 23:14:36 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** dest = src after the loop because it doesn't copy the null terminator
-*/
 #include "libft.h"
 
-char	*ft_strcpy(char *dest, const char *src)
+char	*ft_strjoin_free(char const *s1, char *s2)
 {
-	int i;
+	char *newstr;
 
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	newstr = ft_strjoin(s1, (char const *)s2);
+	ft_strdel(&s2);
+	return (newstr);
 }
