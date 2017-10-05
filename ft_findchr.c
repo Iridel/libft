@@ -1,42 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_findchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/26 14:38:12 by dhill             #+#    #+#             */
-/*   Updated: 2017/10/04 19:46:08 by dhill            ###   ########.fr       */
+/*   Created: 2017/07/05 22:20:19 by dhill             #+#    #+#             */
+/*   Updated: 2017/10/04 20:19:46 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
-{
-	char	*newstr;
-	size_t	len;
-	size_t	i;
-	size_t	i2;
+/*
+** finds the first occurrence of the char find in str up to n bytes.
+** it returns the index not a pointer
+*/
 
-	if (!s2)
-		return (NULL);
-	len = ft_strlen((char *)s1) + ft_strlen((char *)s2);
-	newstr = ft_strnew(len);
-	if (!newstr)
-		return (NULL);
+int		compare(char x, char y)
+{
+	if (x == y)
+		return (0);
+	else
+		return (-1);
+}
+
+int		ft_findchr(const char *str, const char find, size_t n)
+{
+	size_t	i;
+
 	i = 0;
-	i2 = i;
-	while (s1[i] != '\0')
+	if (find)
 	{
-		newstr[i] = s1[i];
-		i++;
+		while (compare(str[i], find) != 0 && i <= n)
+		{
+			if (i == n)
+				return (-1);
+			i++;
+		}
+		return (i);
 	}
-	while (i < len)
-	{
-		newstr[i] = s2[i2];
-		i++;
-		i2++;
-	}
-	return (newstr);
+	else
+		return (-1);
 }
