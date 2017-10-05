@@ -6,7 +6,7 @@
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/09 21:08:00 by dhill             #+#    #+#             */
-/*   Updated: 2017/10/01 01:07:26 by dhill            ###   ########.fr       */
+/*   Updated: 2017/10/04 20:34:56 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,5 +105,4 @@ int					ft_ceil(double num);
 double				ft_sqrt(double num);
 char				*ft_strnjoin(char const *s1, char const *s2, size_t n);
 char				*ft_strjoin_free(char const *s1, char *s2);
-char				*ft_strjoin_fixed(char const *s1, char *s2, size_t n1, size_t n2);
 #endif
