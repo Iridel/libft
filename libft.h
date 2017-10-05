@@ -6,7 +6,7 @@
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/09 21:08:00 by dhill             #+#    #+#             */
-/*   Updated: 2017/10/04 20:34:56 by dhill            ###   ########.fr       */
+/*   Updated: 2017/10/04 20:40:54 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ char				*ft_itoa(int n);
 int					ft_ispositive(int n);
 int					ft_iswhitespace(char c);
 int					ft_intlen(long n);
-int					ft_nfindi(const char *str, const char *find, size_t n);
+int					ft_findchr(const char *str, const char *find, size_t n);
 void				ft_lstpop(t_list **alst, void (*del)(void *, size_t));
 
 t_list				*ft_lstnew(void const *content, size_t content_size);
