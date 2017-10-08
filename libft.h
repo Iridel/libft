@@ -6,7 +6,7 @@
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/09 21:08:00 by dhill             #+#    #+#             */
-/*   Updated: 2017/10/04 20:40:54 by dhill            ###   ########.fr       */
+/*   Updated: 2017/10/07 23:54:49 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ char				*ft_itoa(int n);
 int					ft_ispositive(int n);
 int					ft_iswhitespace(char c);
 int					ft_intlen(long n);
-int					ft_findchr(const char *str, const char *find, size_t n);
+int					ft_findchr(const char *str, const char find, size_t n);
 void				ft_lstpop(t_list **alst, void (*del)(void *, size_t));
 
 t_list				*ft_lstnew(void const *content, size_t content_size);
@@ -105,4 +105,5 @@ int					ft_ceil(double num);
 double				ft_sqrt(double num);
 char				*ft_strnjoin(char const *s1, char const *s2, size_t n);
 char				*ft_strjoin_free(char const *s1, char *s2);
+char				*ft_strjoin_null(char const *s1, char const *s2);
 #endif

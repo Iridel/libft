@@ -1,42 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin_null.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/26 14:38:12 by dhill             #+#    #+#             */
-/*   Updated: 2017/10/04 22:01:07 by dhill            ###   ########.fr       */
+/*   Created: 2017/10/07 23:49:23 by dhill             #+#    #+#             */
+/*   Updated: 2017/10/07 23:55:11 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin_null(char const *s1, char const *s2)
 {
 	char	*newstr;
-	size_t	len;
-	size_t	i;
-	size_t	i2;
 
-	if (!s1 || !s2)
-		return (NULL);
-	len = ft_strlen((char *)s1) + ft_strlen((char *)s2);
-	newstr = ft_strnew(len);
-	if (!newstr)
-		return (NULL);
-	i = 0;
-	i2 = i;
-	while (s1[i] != '\0')
+	if (!s1 && s2)
 	{
-		newstr[i] = s1[i];
-		i++;
+		newstr = ft_strsub(s2, 0, ft_strlen(s2));
+		return (newstr);
 	}
-	while (i < len)
-	{
-		newstr[i] = s2[i2];
-		i++;
-		i2++;
-	}
-	return (newstr);
+	else
+		return (ft_strjoin(s1, s2));
+	return (NULL);
 }
