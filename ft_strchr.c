@@ -6,7 +6,7 @@
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/10 17:15:08 by dhill             #+#    #+#             */
-/*   Updated: 2017/10/19 17:46:03 by dhill            ###   ########.fr       */
+/*   Updated: 2017/10/19 18:16:32 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 ** the string s.
 */
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *str, int c)
 {
 	while (str)
 	{
