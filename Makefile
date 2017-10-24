@@ -6,7 +6,7 @@
 #    By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/18 01:50:34 by dhill             #+#    #+#              #
-#    Updated: 2017/10/07 23:54:17 by dhill            ###   ########.fr        #
+#    Updated: 2017/10/23 21:19:03 by dhill            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ SRCS = 	ft_atoi.c ft_memalloc.c ft_putendl_fd.c ft_strdup.c ft_strncpy.c \
 		ft_toupper.c ft_lstpop.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c \
 		ft_lstadd.c ft_lstiter.c ft_lstmap.c ft_tprint.c ft_findchr.c \
 		ft_ceil.c ft_sqrt.c ft_realloc.c ft_tprint.c ft_strnjoin.c \
-		ft_strjoin_free.c ft_strjoin_null.c
+		ft_strjoin_free.c ft_strjoin_null.c get_next_line.c
 OBJ = ${SRCS:.c=.o} 
 
 .PHONY: all clean fclean re

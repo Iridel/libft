@@ -6,11 +6,11 @@
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/20 14:05:53 by dhill             #+#    #+#             */
-/*   Updated: 2017/10/22 12:02:35 by dhill            ###   ########.fr       */
+/*   Updated: 2017/10/23 21:21:49 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "libft.h"
 
 int		no_null(int	const fd, int bytes, char **line, char **file)
 {
