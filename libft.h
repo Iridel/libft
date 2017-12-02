@@ -6,7 +6,7 @@
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/09 21:08:00 by dhill             #+#    #+#             */
-/*   Updated: 2017/12/02 01:55:15 by dhill            ###   ########.fr       */
+/*   Updated: 2017/12/02 02:04:24 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ void				*ft_memmove(void *dest, const void *src, size_t len);
 void				*ft_memchr(const void *s, int c, size_t n);
 void				*ft_memalloc(size_t size);
 
-size_t				ft_strlen(const char *str);
+int					ft_strlen(const char *str);
 size_t				ft_strlcat(char *dest, const char *src, size_t size);
 
 int					ft_strequ(char const *s1, char const *s2);
