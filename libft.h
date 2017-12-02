@@ -6,7 +6,7 @@
 /*   By: dhill <dhill@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/09 21:08:00 by dhill             #+#    #+#             */
-/*   Updated: 2017/10/23 21:21:34 by dhill            ###   ########.fr       */
+/*   Updated: 2017/12/02 01:55:15 by dhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,4 +110,5 @@ char				*ft_strnjoin(char const *s1, char const *s2, size_t n);
 char				*ft_strjoin_free(char const *s1, char *s2);
 char				*ft_strjoin_null(char const *s1, char const *s2);
 int					get_next_line(int const fd, char **line);
+int					ft_isupper(char c);
 #endif
